@@ -5,23 +5,52 @@
 {% block content %}
     <div class="accounts-container">
         <div class="number-of-users">
-            All traders: 10
         <div>
         <div class="amount-traded">
-            <div><canvas id="traded"></canvas></div>
+            <div class="canvas-container">
+                <div class="canvas-container-child">
+                    <canvas class="canvas" id="traded"></canvas>
+                </div>
+                    <div class="canvas-container-child-line">
+                        <canvas class="canvas" id="home-line"></canvas>
 
-            $1000
+                    </div>
+            </div>
         </div>
         <div class="accounts-list">
-            Active Traders:
-        {% for trader in traders %}
-            <div class="account">
-                <a href="{% url 'getTrader' trader|mongoId:"_id" %}">
-                    <span>{{forloop.counter}}</span> 
-                    {{trader.firstname}} {{trader.lastname}}
+
+            <h3>Active traders: 10
+                <span class="h3-inner">Total amount traded: $1000</span>
+            </h3>
+            <hr>
+            <div class="account-list-items">
+                <span>
+                    <strong>Id</strong>
+                </span>
+                <span>
+                    <strong>Full name</strong>
+                </span>
+                <span>
+                    <strong>Email</strong>
+                </span>
+                <span>
+                    <strong>Bonus</strong>
+                </span>
+            {% for trader in traders %}
+            <!-- <div class="account"> -->
+                <a href="{% url 'getTrader' trader|mongoId:'_id' %}">
+                    <span>{{forloop.counter}}</span>
                 </a>
-            </div>
+                <a href="{% url 'getTrader' trader|mongoId:'_id' %}">
+                    <span>{{trader.firstname}} {{trader.lastname}}</span>
+                </a>
+                <a href="{% url 'getTrader' trader|mongoId:'_id' %}">
+                    <span>{{trader.email}}</span>
+                </a>
+                    <span>${{trader.initial}}</span>
+            <!-- </div> -->
         {% endfor %}
         </div>
+    </div>
     </div>
 {% endblock %}

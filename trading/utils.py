@@ -45,9 +45,9 @@ def populate_account():
     trade_accounts = [
         {"firstname":"Sharon","lastname":"Ferney","email":"sferney0@fastcompany.com", "initial": 100},
         {"firstname":"Gwenneth","lastname":"Garley","email":"ggarley1@ucla.edu", "initial": 100},
-        {"firstname":"Dotty","lastname":"Garie","email":"dgarie2@php.net"},
+        {"firstname":"Dotty","lastname":"Garie","email":"dgarie2@php.net", "initial": 100},
         {"firstname":"Ailis","lastname":"Kilcullen","email":"akilcullen3@fema.gov","initial": 100},
-        {"firstname":"Ronny","lastname":"Maxwell","email":"rmaxwell4@t.co"},
+        {"firstname":"Ronny","lastname":"Maxwell","email":"rmaxwell4@t.co", "initial": 100},
         {"firstname":"Cole","lastname":"Rigmond","email":"crigmond5@sitemeter.com","initial": 100},
         {"firstname":"Mal","lastname":"Berthelet","email":"mberthelet6@aboutads.info","initial": 100},
         {"firstname":"Sax","lastname":"McIlheran","email":"smcilheran7@google.de","initial": 100},

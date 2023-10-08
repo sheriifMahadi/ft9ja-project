@@ -7,4 +7,37 @@
     padding: 0;
 }
 
-.
+.canvas-container {
+    display: grid;
+    grid-template-columns:auto auto;  
+    padding: 40px;
+   
+}
+.canvas-container-child-line{
+    padding-top: 60px;
+}
+.canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.accounts-list{
+    padding: 20px; 
+
+}
+.h3-inner{
+    display: block;
+}
+.account-list-items{
+    display: grid;
+    grid-template-columns:auto auto auto auto;  
+    padding-top: 10px;
+}
+.account-list-items > span{
+    padding: 8px 4px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
