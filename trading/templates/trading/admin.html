@@ -1,0 +1,27 @@
+{% extends "trading/base.html" %}
+{% load mongoId %}
+{% block title %}<title>Admin</title>{% endblock %}
+
+{% block content %}
+    <div class="accounts-container">
+        <div class="number-of-users">
+            All traders: 10
+        <div>
+        <div class="amount-traded">
+            <div><canvas id="traded"></canvas></div>
+
+            $1000
+        </div>
+        <div class="accounts-list">
+            Active Traders:
+        {% for trader in traders %}
+            <div class="account">
+                <a href="{% url 'getTrader' trader|mongoId:"_id" %}">
+                    <span>{{forloop.counter}}</span> 
+                    {{trader.firstname}} {{trader.lastname}}
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

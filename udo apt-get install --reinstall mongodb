@@ -1,0 +1,13 @@
+[0;1;31m●[0m mongodb.service - LSB: An object/document-oriented database
+   Loaded: loaded (/etc/init.d/mongodb; generated)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Fri 2023-10-06 08:22:39 WAT; 21s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 16142 ExecStart=/etc/init.d/mongodb start [0;1;31m(code=exited, status=1/FAILURE)[0m
+ Main PID: 27274 (code=killed, signal=ABRT)
+
+Oct 06 08:22:37 xxxx-HP-ProBook-440-G2 systemd[1]: Starting LSB: An object/document-oriented database...
+Oct 06 08:22:38 xxxx-HP-ProBook-440-G2 mongodb[16142]:  * Starting database mongodb
+Oct 06 08:22:39 xxxx-HP-ProBook-440-G2 mongodb[16142]:    ...fail!
+Oct 06 08:22:39 xxxx-HP-ProBook-440-G2 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongodb.service: Control process exited, code=exited status=1[0m
+Oct 06 08:22:39 xxxx-HP-ProBook-440-G2 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongodb.service: Failed with result 'exit-code'.[0m
+Oct 06 08:22:39 xxxx-HP-ProBook-440-G2 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start LSB: An object/document-oriented database.[0m

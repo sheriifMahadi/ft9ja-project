@@ -1,0 +1,23 @@
+{% load tz %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.js"></script> 
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script type="text/javascript" src="{% static '/main.js' %}" defer></script>
+    <link href="{% static '/style.css' %}" rel="stylesheet">
+    
+    {% block title %}
+        <title>hhh</title>
+    {% endblock title %}
+</head>
+<body>
+    {% block content %}
+ 
+    {% endblock %}
+</body>
+</html>
