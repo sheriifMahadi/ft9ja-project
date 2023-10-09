@@ -1,0 +1,16 @@
+{% extends "trading/base.html" %}
+
+{% block title %}<title>Login</title>{% endblock %}
+
+{% block content %}
+    <div class="form-login">
+       <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login" placeholder="trader@mail">
+        <button name="submit">
+            login
+        </button>
+       </form>
+    </div>
+{% endblock %}

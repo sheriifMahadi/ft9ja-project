@@ -5,6 +5,7 @@
 {% block content %}
     <div class="accounts-container">
         <div class="number-of-users">
+            <p><h1>Admin Dashboard Traders view</h1></p>
         <div>
         <div class="amount-traded">
             <div class="canvas-container">
@@ -47,7 +48,7 @@
                 <a href="{% url 'getTrader' trader|mongoId:'_id' %}">
                     <span>{{trader.email}}</span>
                 </a>
-                    <span>${{trader.initial}}</span>
+                    <span style="color: green">${{trader.initial}}</span>
             <!-- </div> -->
         {% endfor %}
         </div>

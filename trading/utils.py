@@ -84,6 +84,11 @@ def get_trader(id):
 
     return [account, trade]
 
+def get_trader_by_email(email):
+    account = accounts.find_one({'email': email})
+    if account != None:
+        return [account]
+    else: return None
 
 def main():
     populate_account()
