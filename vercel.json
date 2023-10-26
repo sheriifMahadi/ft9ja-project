@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "ft9ja_project/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "ft9ja_project/wsgi.py"
+      }
+    ]
+}
