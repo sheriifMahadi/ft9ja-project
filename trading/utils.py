@@ -3,8 +3,10 @@ import pymongo
 import random 
 import time
 import datetime
+import os
 
-client = pymongo.MongoClient('mongodb+srv://xxxrem:WionX75A6j@cluster0.8osj0zq.mongodb.net/')
+mongo_setup = os.environ.get('mongo_setup')
+client = pymongo.MongoClient(mongo_setup)
 dbname = client['timerapp']
 trades = dbname['trades']
 accounts = dbname['accounts']
