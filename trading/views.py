@@ -4,7 +4,9 @@ from trading.utils import populate_trades
 # from .models import Account
 
 from .utils import main, fetch_all_traders, get_trader, get_trader_by_email
-
+def home(request):
+    return render(request, 'trading/homepage.html')
+    
 def allTraders(request):
     # item = Account.objects.get(id=1)
     # print(item.email)
