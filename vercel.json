@@ -1,5 +1,5 @@
-{     "version": 2,
-      "builds": [
+{   "version": 2,
+    "builds": [
       {
         "src": "ft9ja_project/wsgi.py",
         "use": "@vercel/python",
@@ -14,7 +14,7 @@
         }
       }
     ],
-    "routes": [
+  "routes": [
       {
         "src": "/(.*)",
         "dest": "ft9ja_project/wsgi.py"
@@ -23,5 +23,6 @@
         "src": "/static/(.*)",
         "dest": "/static/$1"
       }
-    ]
- }
+  ]
+}
+
