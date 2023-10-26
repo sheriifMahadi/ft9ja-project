@@ -84,3 +84,37 @@ button {
     font-size: 20px;
     color: white;
 }
+
+.user-info{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto; 
+    margin: 20px 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+
+}
+.user-info > span{
+    text-align: center;
+    display: block;
+}
+
+.span-space {
+    padding: 30px 0;
+
+}
+
+.span-space-bt{
+    padding-bottom: 20px;
+}
+
+.user-trade-chart {
+    margin: 30px;
+}
+#chart { 
+    width: 190px;
+}
+
+.canvas-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

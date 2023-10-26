@@ -5,6 +5,22 @@
 {% block content %}
     <div id="container">
         <div id="hidden-div" data-json="{{ trades }}"></div>
-        <div><canvas id="chart"></canvas></div>
+        <div class="user-info">
+            <span class="span-space"><strong>Name</strong></span>
+            <span class="span-space"><strong>Email</strong></span>
+            <span class="span-space"><strong>Trading bonus</strong></span>
+            <span class="span-space"><strong>Trades</strong></span>
+            <span class="span-space"><Strong>Profits</Strong></span>
+            <span class="span-space"><strong>Loss</strong></span>
+            <span class="name span-space-bt">{{account.firstname}} {{account.lastname}}</span>
+            <span class="email span-space-bt">{{account.email}}</span>
+            <span class="bonus span-space-bt">${{account.initial}}</span>
+            <span class="total-trades span-space-bt">{{total_trades}}</span>
+            <span class="total-profit span-space-bt">${{total_profit}}</span>
+            <span class="total-loss span-space-bt">${{total_loss}}</span>
+        </div>
+        <div class="user-trade-chart">
+            <div class="canvas-div"><canvas id="chart"></canvas></div>
+        </div>
     </div>
 {% endblock %}

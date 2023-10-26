@@ -18,12 +18,20 @@ def getTrader(request, id):
     trader = get_trader(id)
     profit = trader[1]['profit']
     loss = trader[1]['loss']
+    total_trades = len(profit) + len(loss)
+    total_profit = sum(profit)
+    total_loss = sum(loss)
     # for item in trader:
     #     print(item)
     #     print('x')
     #     # profit = item.profit
     #     # loss = item.loss
-    context = {"trades": [profit, loss]}
+    context = {"trades": [profit, loss], 
+                "account": trader[0], 
+                "total_trades": total_trades,
+                "total_profit": total_profit,
+                "total_loss": total_loss
+    }
     return render(request, 'trading/trader.html', context)
 
 def get_trader_login(request):
